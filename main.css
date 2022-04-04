@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url("./background.jpg") no-repeat; */
+  width: 100%;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 5%;
+  padding: 10px;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.185);
+  border-radius: 10px;
+  box-shadow: -5px 10px 10px;
+}
+.calculate {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.185);
+  border-radius: 5px;
+  color: white;
+}
+.calculate .up {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 15pt;
+}
+.calculate .down {
+  width: 100%;
+  height: 50px;
+  padding: 15pt;
+  display: flex;
+  justify-content: end;
+  font-size: 15pt;
+}
+
+.number_session {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 5px;
+  height: 250px;
+}
+.number_session .numbers {
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.number_session .numbers button {
+  width: 30%;
+  font-size: 14pt;
+  outline: none;
+  border: none;
+  margin: 1%;
+  border-radius: 5px;
+}
+.number_session .math {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.number_session .math button {
+  width: 100%;
+  font-size: 14pt;
+  outline: none;
+  border: none;
+  margin: 1%;
+  border-radius: 5px;
+}
+
+.equals {
+  background: black;
+  color: white;
+}
+
+.number_session .numbers button:hover {
+  background: rgba(0, 0, 0, 0.185);
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  font: bold;
+}
+
+.number_session .math button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
